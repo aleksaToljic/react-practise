@@ -9,6 +9,7 @@ class Persons extends Component {
                 <Person
                     click={() => this.props.clicked(index)}
                     name={person.name}
+                    position={index}
                     changed={(event) => this.props.changed(event, person.id)}
                     age={person.age}/>
             </ErrorBoundary>
